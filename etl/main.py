@@ -1,8 +1,8 @@
 import argparse
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
-from transforms import ParseCSVRow
-from schemas import load_schema_from_gcs
+from etl.transforms import ParseCSVRow
+from etl.schemas import load_schema_from_gcs
 
 def run(argv=None):
     parser = argparse.ArgumentParser()
